@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090d0c" />
+    <meta name="description" content="Cyrus Augustine A. Navarro's Computer Programming portfolio." />
+    <title>Cyrus Augustine A. Navarro | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="Cyrus Navarro, home">
+          <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+          <span>CYRUS<span class="accent">.PORTFOLIO</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#stack">Stack</a>
+          <a href="#github">GitHub</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.7"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 15.4A8.5 8.5 0 0 1 8.6 3.7 8.5 8.5 0 1 0 20.3 15.4Z"></path></svg>
+        </button>
+      </header>
+
+      <main id="main">
+        <section class="hero terminal-frame" id="top" aria-labelledby="hero-title">
+          <div class="window-bar">
+            <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="window-path">/home/portfolio/profile</span>
+            <span class="system-state"><i></i> SYSTEM ONLINE</span>
+          </div>
+          <div class="hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow"><span class="prompt-mark">&gt;</span> FIRST-YEAR COMPUTER PROGRAMMING STUDENT</p>
+              <h1 id="hero-title"><span>Cyrus Augustine</span><br /><span>A. Navarro</span><span class="cursor-mark">_</span></h1>
+              <p class="hero-summary">I enjoy building for the web and turning ideas into functional things people can use.</p>
+              <div class="intro-contacts">
+                <span class="intro-contact" role="group" aria-label="Email address hidden for privacy"><span aria-hidden="true">EMAIL</span><span class="privacy-blur" aria-hidden="true">PRIVATE</span></span>
+                <span class="intro-contact" role="group" aria-label="Phone number hidden for privacy"><span aria-hidden="true">PHONE</span><span class="privacy-blur" aria-hidden="true">PRIVATE</span></span>
+              </div>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">-&gt;</span></a>
+                <a class="button button-quiet" href="#contact">Get in touch</a>
+              </div>
+              <div class="hero-meta">
+                <span><i class="live-dot"></i> FULL-STACK DEVELOPMENT</span>
+                <span>STUDENT / AGE 16</span>
+              </div>
+            </div>
+
+            <div class="profile-column">
+              <div class="profile-label"><span>PROFILE.EXE</span><span>00:01:24</span></div>
+              <button class="profile-orb" id="profile-orb" type="button" aria-label="Animate profile portrait" aria-pressed="false">
+                <svg class="profile-art" viewBox="0 0 240 240" role="img" aria-label="Original anime-inspired placeholder portrait">
+                  <defs>
+                    <linearGradient id="portrait-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b8ff4f" /><stop offset="1" stop-color="#4fbd91" /></linearGradient>
+                    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#213b32" /><stop offset="1" stop-color="#101d1b" /></linearGradient>
+                  </defs>
+                  <circle class="portrait-backdrop" cx="120" cy="120" r="112" />
+                  <circle class="portrait-ring" cx="120" cy="120" r="106" />
+                  <g class="portrait-idle">
+                    <path class="shirt" d="M44 230c7-42 33-63 76-63s69 21 76 63H44Z" />
+                    <path class="neck" d="M101 150h38v32h-38z" />
+                    <path class="hair-back" d="M68 100c-2-47 19-72 56-72 41 0 61 31 51 83l-13 54H79L68 100Z" />
+                    <path class="face" d="M79 93c0-34 17-53 42-53s42 19 42 53v24c0 31-20 52-42 52s-42-21-42-52V93Z" />
+                    <path class="hair-front" d="M74 105c-6-41 9-72 45-77 27-4 53 10 61 42-14-9-23-18-29-28-11 19-37 31-74 35l-3 28Z" />
+                    <path class="brow" d="m96 103 15-2m18 0 15 2" />
+                    <path class="eye" d="M97 115h11m25 0h11" />
+                    <path class="nose" d="m119 119-2 12 5 1" />
+                    <path class="mouth" d="M109 143c6 5 16 5 22 0" />
+                    <path class="collar" d="m102 168 18 18 18-18" />
+                  </g>
+                  <g class="portrait-anime" aria-hidden="true">
+                    <path class="anime-hair-back" d="M59 113c-7-63 12-91 55-91 49 0 72 37 59 102l-18 49H76l-17-60Z" />
+                    <path class="anime-face" d="M77 92c0-35 18-55 44-55s44 20 44 55v27c0 33-20 55-44 55s-44-22-44-55V92Z" />
+                    <path class="anime-hair-front" d="M67 103c-4-50 17-79 53-82 34-3 58 15 65 54-20-7-34-20-40-35-15 21-42 32-74 36l-4 27Z" />
+                    <path class="anime-eye" d="M91 118c4-13 17-13 21 0-5 12-16 12-21 0Zm38 0c4-13 17-13 21 0-5 12-16 12-21 0Z" />
+                    <path class="anime-glint" d="m101 112 3 4m36-4 3 4" />
+                    <path class="anime-mouth" d="M110 146c7 7 17 7 24 0" />
+                    <path class="anime-blush" d="M82 135h14m53 0h14" />
+                    <path class="anime-jacket" d="M39 230c7-44 33-66 81-66s74 22 81 66H39Z" />
+                    <path class="anime-collar" d="m101 166 19 22 19-22" />
+                    <path class="sparkle sparkle-one" d="M42 66v16m-8-8h16" />
+                    <path class="sparkle sparkle-two" d="M194 89v12m-6-6h12" />
+                  </g>
+                </svg>
+                <span class="avatar-corner" aria-hidden="true">01</span>
+              </button>
+              <div class="profile-caption"><span>PORTRAIT / INTERACTIVE</span><span class="caption-equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+              <p class="profile-name">CYRUS NAVARRO <span>/// STUDENT</span></p>
+            </div>
+          </div>
+          <div class="frame-footer"><span>PORTFOLIO / 2026</span><span>SCROLL TO EXPLORE <b aria-hidden="true">v</b></span><span>EST. IN PROGRESS</span></div>
+        </section>
+
+        <section class="content-section about-section" id="about" aria-labelledby="about-title">
+          <div class="section-heading">
+            <p class="section-index">01 / ABOUT</p>
+            <h2 id="about-title">A little about<br /><span class="accent">me.</span></h2>
+          </div>
+          <div class="about-content">
+            <div class="about-copy">
+              <p>I'm a first-year Computer Programming student at Dapdap High School. I enjoy building for the web, and I got into full-stack development because I like turning ideas into real, functional products people can use.</p>
+              <p>I learn by doing: I explore new tools, experiment, figure out what went wrong, and keep going. Lately, I've been exploring AI tools to make my workflow faster, not to replace the work.</p>
+              <p>I'm looking for opportunities to apply what I've built and learned independently. I'm based in Bamban, Tarlac, and although I'm still early in my journey, I'm genuinely passionate about where it's going.</p>
+            </div>
+            <div class="fact-grid">
+              <div class="fact"><span>PROGRAM</span><strong>Computer Programming</strong></div>
+              <div class="fact"><span>YEAR LEVEL</span><strong>First year</strong></div>
+              <div class="fact"><span>SCHOOL</span><strong>Dapdap High School</strong></div>
+              <div class="fact"><span>LOCATION</span><strong>Bamban, Tarlac</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section projects-section" id="projects" aria-labelledby="projects-title">
+          <div class="section-heading section-heading-row">
+            <div><p class="section-index">02 / SELECTED WORK</p><h2 id="projects-title">Project <span class="accent">files.</span></h2></div>
+            <p class="section-note">Selected projects and their technology stacks.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-card-featured">
+              <div class="project-topline"><span>PROJECT_01</span><span class="project-state"><i></i> FEATURED</span></div>
+              <div class="project-visual visual-dashboard" aria-hidden="true"><div class="visual-window"><div class="visual-window-top"><i></i><i></i><i></i><span>dashboard.ui</span></div><div class="visual-window-body"><div class="visual-rail"></div><div class="visual-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="visual-lines"><i></i><i></i><i></i></div></div></div></div>
+              <div class="project-info"><div><p class="project-kicker">FEATURED PROJECT</p><h3>Tech Hub</h3></div></div>
+              <div class="project-tags"><span>TypeScript</span><span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>PostgreSQL</span><span>Auth0</span><span>Groq AI</span></div>
+              <div class="project-actions"><button type="button" disabled title="Add the repository URL to enable this link">View code</button><button type="button" disabled title="Add the live project URL to enable this link">View project</button></div>
+            </article>
+            <article class="project-card">
+              <div class="project-topline"><span>PROJECT_02</span><span class="project-state"><i></i> FEATURED</span></div>
+              <div class="project-visual visual-network" aria-hidden="true"><div class="network-node node-a">A</div><div class="network-node node-b">B</div><div class="network-node node-c">C</div><div class="network-node node-d">D</div><div class="network-line line-a"></div><div class="network-line line-b"></div><div class="network-line line-c"></div><div class="network-line line-d"></div></div>
+              <div class="project-info"><div><p class="project-kicker">FEATURED PROJECT</p><h3>Navsumaro</h3></div></div>
+              <div class="project-tags"><span>TypeScript</span><span>React</span><span>Tailwind CSS</span><span>Node.js</span><span>Express.js</span><span>PostgreSQL</span></div>
+              <div class="project-actions"><button type="button" disabled title="Add the repository URL to enable this link">View code</button><button type="button" disabled title="Add the live project URL to enable this link">View project</button></div>
+            </article>
+            <article class="project-card">
+              <div class="project-topline"><span>PROJECT_03</span><span class="project-state"><i></i> FEATURED</span></div>
+              <div class="project-visual visual-terminal" aria-hidden="true"><span>&gt; project / interview-spark</span><span class="terminal-code">typescript // next.js</span><span>&gt; stack: <b>Auth0 + Groq AI</b><i class="terminal-cursor"></i></span></div>
+              <div class="project-info"><div><p class="project-kicker">FEATURED PROJECT</p><h3>InterviewSpark</h3></div></div>
+              <div class="project-tags"><span>TypeScript</span><span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>PostgreSQL</span><span>Auth0</span><span>Groq AI</span></div>
+              <div class="project-actions"><button type="button" disabled title="Add the repository URL to enable this link">View code</button><button type="button" disabled title="Add the live project URL to enable this link">View project</button></div>
+            </article>
+            <article class="project-card">
+              <div class="project-topline"><span>PROJECT_04</span><span class="project-state"><i></i> FEATURED</span></div>
+              <div class="project-visual visual-dashboard" aria-hidden="true"><div class="visual-window"><div class="visual-window-top"><i></i><i></i><i></i><span>startsmart.app</span></div><div class="visual-window-body"><div class="visual-rail"></div><div class="visual-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="visual-lines"><i></i><i></i><i></i></div></div></div></div>
+              <div class="project-info"><div><p class="project-kicker">FEATURED PROJECT</p><h3>StartSmart</h3></div></div>
+              <div class="project-tags"><span>TypeScript</span><span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>PostgreSQL</span><span>Auth0</span><span>Groq AI</span></div>
+              <div class="project-actions"><button type="button" disabled title="Add the repository URL to enable this link">View code</button><button type="button" disabled title="Add the live project URL to enable this link">View project</button></div>
+            </article>
+            <article class="project-card">
+              <div class="project-topline"><span>PROJECT_05</span><span class="project-state"><i></i> FEATURED</span></div>
+              <div class="project-visual visual-terminal" aria-hidden="true"><span>&gt; project / portfolio</span><span class="terminal-code">typescript // next.js</span><span>&gt; stack: <b>React + Tailwind CSS</b><i class="terminal-cursor"></i></span></div>
+              <div class="project-info"><div><p class="project-kicker">FEATURED PROJECT</p><h3>My Portfolio</h3></div></div>
+              <div class="project-tags"><span>TypeScript</span><span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>PostgreSQL</span><span>Auth0</span><span>Groq AI</span></div>
+              <div class="project-actions"><button type="button" disabled title="Add the repository URL to enable this link">View code</button><button type="button" disabled title="Add the live project URL to enable this link">View project</button></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section skills-section" id="stack" aria-labelledby="skills-title">
+          <div class="section-heading"><p class="section-index">03 / TOOLBOX</p><h2 id="skills-title">Tech <span class="accent">stack.</span></h2></div>
+          <div class="skills-console">
+            <span class="console-prompt">&gt; stack --list</span>
+            <div class="stack-group"><h3>FRONTEND</h3><div class="stack-list">
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy" /><span>HTML</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy" /><span>CSS</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy" /><span>JavaScript</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" loading="lazy" /><span>Bootstrap</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" loading="lazy" /><span>Next.js</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy" /><span>React</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" loading="lazy" /><span>TypeScript</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="" loading="lazy" /><span>Tailwind CSS</span></div>
+            </div></div>
+            <div class="stack-group"><h3>BACKEND &amp; DATABASE</h3><div class="stack-list">
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy" /><span>Node.js</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" loading="lazy" /><span>Express.js</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy" /><span>MySQL</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" loading="lazy" /><span>PostgreSQL</span></div>
+            </div></div>
+            <div class="stack-group"><h3>MOBILE</h3><div class="stack-list">
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy" /><span>React Native</span></div>
+            </div></div>
+            <div class="stack-group"><h3>TOOLS &amp; AI</h3><div class="stack-list">
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" loading="lazy" /><span>VS Code</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" loading="lazy" /><span>GitHub</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="" loading="lazy" /><span>Figma</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="" loading="lazy" /><span>Canva</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://groq.com/favicon.svg" alt="" loading="lazy" /><span>Groq AI</span></div>
+            </div></div>
+            <div class="stack-group"><h3>SECURITY &amp; AUTH</h3><div class="stack-list">
+              <div class="stack-item"><span class="stack-logo stack-token" aria-hidden="true">JWT</span><span>JWT</span></div>
+              <div class="stack-item"><span class="stack-logo stack-token" aria-hidden="true">$</span><span>bcrypt</span></div>
+              <div class="stack-item"><span class="stack-logo stack-token" aria-hidden="true">O</span><span>OAuth</span></div>
+              <div class="stack-item"><img class="stack-logo" src="https://cdn.simpleicons.org/auth0/EB5424" alt="" loading="lazy" /><span>Auth0</span></div>
+            </div></div>
+          </div>
+        </section>
+
+        <section class="content-section github-section" id="github" aria-labelledby="github-title">
+          <div class="section-heading">
+            <p class="section-index">04 / ACTIVITY</p>
+            <h2 id="github-title">GitHub <span class="accent">contributions.</span></h2>
+          </div>
+          <div class="github-panel">
+            <div class="github-heading">
+              <svg class="github-logo" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.08 1.84 2.82 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.53.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.9 1.23 3.22 0 4.62-2.8 5.63-5.47 5.92.43.37.81 1.1.81 2.22v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" /></svg>
+              <div><h3>Sample contribution activity</h3><p>Illustrative preview only; this is not your account history.</p></div>
+            </div>
+            <div class="contribution-scroll" tabindex="0" aria-label="Sample GitHub contribution chart; illustrative data, not from your account">
+              <div class="contribution-grid" id="contribution-grid" aria-hidden="true"></div>
+            </div>
+            <div class="contribution-legend"><span>LESS</span><i></i><i></i><i></i><i></i><span>MORE</span><span class="github-status">SAMPLE DATA / NOT LIVE</span></div>
+          </div>
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+          <div class="contact-copy"><p class="section-index">05 / CONTACT</p><h2 id="contact-title">Let's start<br /><span class="accent">a conversation.</span></h2><p>I'm open to opportunities, collaborations, and conversations about web development.</p></div>
+          <div class="contact-links">
+            <div class="contact-row contact-private" role="group" aria-label="Email address hidden for privacy"><span><small aria-hidden="true">EMAIL</small><strong class="privacy-blur" aria-hidden="true">PRIVATE</strong></span></div>
+            <div class="contact-row contact-private" role="group" aria-label="Phone number hidden for privacy"><span><small aria-hidden="true">PHONE</small><strong class="privacy-blur" aria-hidden="true">PRIVATE</strong></span></div>
+            <div class="social-links" aria-label="Social profiles">
+              <span class="social-link social-placeholder" role="group" aria-label="Facebook profile hidden for privacy"><b aria-hidden="true">f</b><span aria-hidden="true">Facebook</span><small class="privacy-blur" aria-hidden="true">PRIVATE</small></span>
+              <span class="social-link social-placeholder" role="group" aria-label="Messenger profile hidden for privacy"><b aria-hidden="true">M</b><span aria-hidden="true">Messenger</span><small class="privacy-blur" aria-hidden="true">PRIVATE</small></span>
+              <span class="social-link social-placeholder"><b aria-hidden="true">in</b><span>LinkedIn <small>ADD LINK</small></span></span>
+              <span class="social-link social-placeholder"><b aria-hidden="true">GH</b><span>GitHub <small>ADD LINK</small></span></span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>CYRUS<span class="accent">.PORTFOLIO</span></span></a><span>DESIGNED TO KEEP GROWING</span><a href="#top">BACK TO TOP ^</a></footer>
+    </div>
+  </body>
+</html>
