@@ -101,36 +101,11 @@ h1 { margin-bottom: 18px; font-size: 50px; font-weight: 600; line-height: 1.02; 
 .profile-orb { position: relative; display: block; width: 100%; padding: 0; overflow: hidden; border: 1px solid var(--line); background: var(--surface-raised); cursor: pointer; aspect-ratio: 1; }
 .profile-orb::before { position: absolute; z-index: 1; inset: 11px; border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent); content: ""; pointer-events: none; }
 .profile-orb:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.profile-art { display: block; width: 100%; height: 100%; }
+.profile-still { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .profile-hover-gif { position: absolute; z-index: 2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; }
 .profile-orb:hover .profile-hover-gif,
 .profile-orb:focus-visible .profile-hover-gif,
 .profile-orb.is-animated .profile-hover-gif { opacity: 1; }
-.portrait-backdrop { fill: url(#portrait-bg); opacity: .18; }
-.portrait-ring { fill: none; stroke: var(--accent); stroke-dasharray: 2 6; stroke-width: 1; opacity: .5; transform-origin: center; transition: transform .6s ease; }
-.shirt, .anime-jacket { fill: #32493c; }
-.neck { fill: #dfaa7e; }
-.hair-back, .hair-front { fill: url(#hair); }
-.face { fill: #efbd97; }
-.brow, .eye, .nose, .mouth { fill: none; stroke: #29322a; stroke-linecap: round; stroke-width: 2.5; }
-.brow { stroke-width: 2; }
-.collar { fill: none; stroke: var(--accent); stroke-linejoin: round; stroke-width: 3; }
-.portrait-anime { opacity: 0; transform: translateY(8px) scale(.96); transform-origin: center; transition: opacity .22s ease, transform .3s cubic-bezier(.2,.8,.2,1); }
-.anime-hair-back, .anime-hair-front { fill: #17221e; }
-.anime-face { fill: #f1c09c; }
-.anime-eye { fill: #233d32; }
-.anime-glint, .sparkle { fill: none; stroke: #f7ffe9; stroke-linecap: round; stroke-width: 2.4; }
-.anime-mouth { fill: none; stroke: #9d4e4b; stroke-linecap: round; stroke-width: 2; }
-.anime-blush { fill: none; stroke: #e88d80; stroke-linecap: round; stroke-width: 4; opacity: .7; }
-.anime-jacket { fill: #22392f; }
-.anime-collar { fill: none; stroke: var(--accent); stroke-linejoin: round; stroke-width: 4; }
-.sparkle { stroke: var(--accent); opacity: 0; }
-.profile-orb:is(:hover, :focus-visible, .is-animated) .portrait-idle { opacity: 0; }
-.profile-orb:is(:hover, :focus-visible, .is-animated) .portrait-anime { opacity: 1; transform: translateY(0) scale(1); }
-.profile-orb:is(:hover, :focus-visible, .is-animated) .portrait-ring { transform: rotate(25deg); }
-.profile-orb:is(:hover, :focus-visible, .is-animated) .sparkle { animation: sparkle-in .5s both; }
-.profile-orb:is(:hover, :focus-visible, .is-animated) .sparkle-two { animation-delay: .12s; }
-.portrait-idle { transition: opacity .18s ease; }
 .avatar-corner { position: absolute; right: 17px; bottom: 16px; z-index: 3; color: var(--accent); font-family: "DM Mono", monospace; font-size: 10px; }
 .profile-caption { padding: 10px 2px 0; }
 .caption-equalizer { display: flex; height: 12px; align-items: center; gap: 2px; }
@@ -270,7 +245,6 @@ h2 { margin-bottom: 0; font-size: 42px; font-weight: 500; line-height: 1.12; let
 
 @keyframes arrive { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes blink { to { visibility: hidden; } }
-@keyframes sparkle-in { 0% { opacity: 0; transform: scale(.3); } 65% { opacity: 1; transform: scale(1.15); } 100% { opacity: .85; transform: scale(1); } }
 
 @media (max-width: 760px) {
   .site-shell { width: min(100% - 32px, 600px); }
