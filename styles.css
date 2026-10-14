@@ -102,6 +102,10 @@ h1 { margin-bottom: 18px; font-size: 50px; font-weight: 600; line-height: 1.02; 
 .profile-orb::before { position: absolute; z-index: 1; inset: 11px; border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent); content: ""; pointer-events: none; }
 .profile-orb:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .profile-art { display: block; width: 100%; height: 100%; }
+.profile-hover-gif { position: absolute; z-index: 2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; }
+.profile-orb:hover .profile-hover-gif,
+.profile-orb:focus-visible .profile-hover-gif,
+.profile-orb.is-animated .profile-hover-gif { opacity: 1; }
 .portrait-backdrop { fill: url(#portrait-bg); opacity: .18; }
 .portrait-ring { fill: none; stroke: var(--accent); stroke-dasharray: 2 6; stroke-width: 1; opacity: .5; transform-origin: center; transition: transform .6s ease; }
 .shirt, .anime-jacket { fill: #32493c; }
@@ -127,7 +131,7 @@ h1 { margin-bottom: 18px; font-size: 50px; font-weight: 600; line-height: 1.02; 
 .profile-orb:is(:hover, :focus-visible, .is-animated) .sparkle { animation: sparkle-in .5s both; }
 .profile-orb:is(:hover, :focus-visible, .is-animated) .sparkle-two { animation-delay: .12s; }
 .portrait-idle { transition: opacity .18s ease; }
-.avatar-corner { position: absolute; right: 17px; bottom: 16px; z-index: 2; color: var(--accent); font-family: "DM Mono", monospace; font-size: 10px; }
+.avatar-corner { position: absolute; right: 17px; bottom: 16px; z-index: 3; color: var(--accent); font-family: "DM Mono", monospace; font-size: 10px; }
 .profile-caption { padding: 10px 2px 0; }
 .caption-equalizer { display: flex; height: 12px; align-items: center; gap: 2px; }
 .caption-equalizer i { display: block; width: 2px; height: 5px; background: var(--accent); opacity: .75; }
